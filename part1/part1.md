@@ -10,3 +10,23 @@
 10. Running the function would result in a TypeError in line 7. Therefore, the statement on line 12 would not be reached. If there was no error earlier, this statement would cause an error, since the `discountedPrice` variable was declared in the for loop using the `const` keyword, which means that its scope is the for loop. The `console.log` statement is outside that code block, causing an error.
 11. Running the function would result in a TypeError in line 7. Therefore, the statement on line 13 would not be reached. If there were no errors caused earlier, this statement would print 0, since the `finalPrice` variable is declared at the beginning of the function, which means its scope is the function block. It is a constant variable, so its value cannot be changed, which means its value is 0.
 12. Running the function would result in a TypeError in line 7. Therefore, the function would not return a value, since the return statement would not be reached. If there are no errors cause before the return statement, the function will return `[0, 0, 0]`. This is because the variable `discounted` is initialized as an empty array, and then the value of `finalPrice` is pushed on to the array for each iteration of the for loop. Since there is no assignment to the array, only modification of the array, the constant value 0 that is assigned to `finalPrice` is pushed to the array for each value in `prices`.
+13. A. `student.name`  
+    B. `student['Grad Year']`  
+    C. `student.greeting()`  
+    D. `student['Favorite Teacher'].name`  
+    E. `student.courseLoad[0]`  
+14. A. The output is `'32'`, since 2 is converted to a string and concatenated to the string `'3'`, and the `+` operator is defined for string concatenation.
+    B. The output is 1. This is because the `-` operator is not defined for strings, so the string '3' is converted to an integer, and the result of 3-2 is output.
+    C. The output is 3. This is because null is converted to a number for addition, and it is converted to 0, and then added to 3.
+    D. The output is `'3null'`, since the addition operator results in null being converted to a string and concatenated to the string `'3'`.
+    E. The output is 4. For the addition operator, the value true is converted to the integer 1, which is then added to the integer 3. 
+    F. The output is 0. For the addition operator, both false and null are converted to the integer 0, and then added together.
+    G. The output is `'3undefined'`. For the addition operator with a string, undefined is converted to a string, and it is concatenated to the string `"3"`.
+    H. The output is `NaN`. For the subtraction operator, both values will be converted to numerical values. The string "3" is converted to the number 3, and undefined is converted to the numerical value `NaN`, which means it is not a legal number. Adding 3 to NaN will still result in NaN.
+15. A. The output is true, since for different types, JavaScript converts the values to numbers. '2' is converted to the number 2, and compared to the number 1.
+    B. The output is false. For strings, JavaScript compares the values in dictionary order, so '12' is not greater than '2'.
+    C. The output is true. The equality operator will convert the string '2' to the number 2, and compare it to 2.
+    D. The output is false. The strict equality operator compares values without converting the types of the operands, so '2' and 2 are not equal.
+    E. The output is false. The equality operator converts the operands to numbers, and true is converted to the number 1.
+    F. The output is true. Boolean() converts any non-zero number to true, and the strict equality operator returns true when comparing true and true.
+16. The `==` operator compares values, converting the operands to numbers if they are of different types. The `===` operator compares values without any type conversion.
